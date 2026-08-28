@@ -1,6 +1,5 @@
 import { ArrowUpRight, GitBranch, Link2, Mail, MapPin } from "lucide-react";
 import { contactDetails } from "@/data/contact";
-import { ContactForm } from "./ContactForm";
 
 const icons = { mail: Mail, linkedin: Link2, github: GitBranch, location: MapPin };
 
@@ -16,13 +15,12 @@ export function Contact() {
         <div className="contact-details">
           {contactDetails.map((detail) => {
             const Icon = icons[detail.icon as keyof typeof icons];
-            const content = <><Icon size={16} /> <span><small>{detail.label}</small>{detail.value}</span></>;
+            const content = <><Icon size={20} /> <span><small>{detail.label}</small>{detail.value}</span></>;
             return detail.href ? <a key={detail.label} href={detail.href} target={detail.href.startsWith("http") ? "_blank" : undefined} rel={detail.href.startsWith("http") ? "noreferrer" : undefined}>{content}</a> : <span key={detail.label}>{content}</span>;
           })}
         </div>
-        <a className="button button--coral" href={emailDetail?.href ?? "#contact"}>Let&apos;s Connect <ArrowUpRight size={17} /></a>
+        <a className="button button--coral" href={emailDetail?.href ?? "#contact"}>Let&apos;s Connect <ArrowUpRight size={20} /></a>
       </div>
-      <div className="contact-form-panel"><ContactForm /></div>
     </section>
   );
 }

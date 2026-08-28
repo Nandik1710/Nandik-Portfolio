@@ -11,7 +11,7 @@ export function Achievements() {
       <div className="achievement-grid">
         {achievements.map((achievement, index) => {
           const Icon = icons[index % icons.length];
-          return <article className="achievement-card" key={achievement.title + achievement.detail}><span className="achievement-icon"><Icon size={19} /></span><div><h3>{achievement.title}</h3><p>{achievement.detail}</p></div>{achievement.year && <time>{achievement.year}</time>}</article>;
+          return <article className="achievement-card" key={achievement.title + achievement.detail}><span className="achievement-icon"><Icon size={23} /></span><div><h3>{achievement.title}</h3><p>{achievement.detail}</p></div>{achievement.year && <time>{achievement.year}</time>}</article>;
         })}
       </div>
     </section>

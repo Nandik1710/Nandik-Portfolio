@@ -42,11 +42,27 @@ export interface ExperienceItem {
   description: string;
   technologies: string[];
 }
+export type SkillAccent =
+  | "coral"
+  | "blue"
+  | "mint"
+  | "purple"
+  | "yellow";
+
+export type SkillIcon =
+  | "code"
+  | "layers"
+  | "cloud"
+  | "ai"
+  | "testing";
 
 export interface SkillGroup {
   category: string;
   items: string[];
+  icon: SkillIcon;
+  accent?: SkillAccent;
 }
+
 
 export interface Achievement {
   title: string;

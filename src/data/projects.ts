@@ -172,8 +172,8 @@ export const projects: Project[] = [
     {
     slug: "transportation-data-collection",
     title: "Smart Travel Planner & Data Collection App",
-    image: "/images/billSense-hero.png",
-    cardImage: "/images/billsense-logo.png",
+    image: "/images/travel-hero.png",
+    cardImage: "/images/travel-logo.png",
     subtitle: "Privacy-first travel planning and transportation data collection",
     shortDescription: "A mobile platform for trip planning and automated transportation data collection.",
     description:
