@@ -16,7 +16,7 @@ export const socialLinks = {
 
 export const heroStats = [
   { value: "2+", label: "Internships", icon: "briefcase" },
-  { value: "4+", label: "Major Projects", icon: "layers" },
+  { value: "8+", label: "Major Projects", icon: "layers" },
   { value: "2", label: "Hackathon Wins", icon: "trophy" },
   { value: "AWS", label: "Certified", icon: "cloud" },
 ] as const;
