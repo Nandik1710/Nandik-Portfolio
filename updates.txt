@@ -1,0 +1,46 @@
+Nandik Dawar Portfolio — Development Updates
+
+Completed
+
+- Read README.md and the supplied portfolio brief before implementation.
+- Scaffolded the Next.js App Router, TypeScript, Tailwind CSS, data, component, route, and API structure.
+- Copied the supplied transparent portrait to public/images/nandik-hero.png without modifying it.
+- Installed Next.js, React, Tailwind CSS, Motion, Lenis, Lucide React, Resend, Zod, Vercel Analytics, TypeScript, and ESLint dependencies.
+- Built the global warm cream, navy, coral, blue, mint, purple, and yellow design system.
+- Added responsive light/dark theme tokens, focus states, reduced-motion CSS, and mobile overflow protection.
+- Implemented the responsive navbar, active section state, mobile drawer, theme toggle, Lenis smooth scrolling, hero animation, and footer.
+- Implemented reusable homepage sections for About, Featured Projects, Experience, Skills, Achievements, and Contact.
+- Moved repeated portfolio content into src/data and src/types.
+- Added the four featured projects: BillSense, Automated Interview Platform, Mental Wellness, and CarRental.
+- Added verified GitHub repository links for BillSense, Mental Wellness, and CarRental.
+- Added the AI Interview Platform facts from its supplied README: three services, dynamic expiring links, consent, recording, silence detection, Cloudinary, MongoDB, Faster Whisper, FFmpeg, and Q&A transcript generation.
+- Verified public GitHub profile facts and updated the LinkedIn and GitHub profile links.
+- Added the Skills development card and solveProblem code card.
+- Added the custom invalid-project 404 behavior.
+- Added the production contact form with Name, Email, Subject and Message fields, client/server Zod validation, sanitisation, accessible errors, sending/success/error states, duplicate-submit protection, honeypot filtering and basic rate limiting.
+- Connected the server-only contact route to Resend using RESEND_API_KEY and CONTACT_EMAIL without exposing secrets to client bundles.
+- Documented RESEND_API_KEY, CONTACT_EMAIL and NEXT_PUBLIC_SITE_URL in README.md while preserving .env.local.example.
+- Added canonical metadata, OpenGraph and Twitter cards, JSON-LD Person/WebSite structured data, a generated branded OpenGraph PNG, and an application icon.
+- Updated sitemap.xml and robots.txt to use NEXT_PUBLIC_SITE_URL, with a localhost fallback for local development.
+- Moved Vercel Analytics to the root layout so it loads across routes without blocking page rendering.
+- Added accessible contact form labels, live status messaging, keyboard-friendly controls, stronger focus/contrast treatment and reduced-motion safeguards.
+- Added the supplied one-page resume byte-for-byte at public/Nandik-Dawar-Resume.pdf and enabled separate View CV and Download CV actions in the hero.
+- Completed final production QA across all requested viewport widths, project routes, navigation states, focus behavior, theme switching, resume serving, SEO endpoints, and console output.
+- Implemented the /projects index page with reusable, linked ProjectCard instances.
+- Implemented static case-study routes for BillSense, Automated Interview Platform, Mental Wellness, and CarRental.
+- Added per-project metadata, responsive hero layouts, stack badges, overview, problem, solution, features, technology choices, engineering challenges, and learning sections.
+- Added responsive HTML/CSS architecture diagrams, including the exact BillSense upload-to-dashboard pipeline.
+- Added accessible visual studies with descriptive labels because source screenshots were not supplied.
+- Added next-project navigation and conditional Live Demo/GitHub CTAs that render only for verified URLs.
+- Ran lint, production build, responsive viewport checks, theme checks, mobile menu checks, route checks, and console checks.
+
+Next development steps
+
+- Implement the real contact form with Zod validation, Resend delivery, rate limiting, sanitisation, and spam protection.
+- Add final SEO metadata, canonical URL handling, OpenGraph image, favicon, sitemap, robots metadata, and structured data.
+- Add the supplied resume at public/Nandik-Dawar-Resume.pdf when available and verify the download CTA.
+- Replace any future project/social link gaps only after real URLs are supplied or verified.
+- Add optimized project screenshots or illustrations without inventing project evidence.
+- Run final browser QA in Chrome, Edge, Firefox, and Safari-equivalent responsive checks.
+- Run Lighthouse audits and fix accessibility, performance, best-practice, and SEO findings.
+- Deploy the verified production build to Vercel.

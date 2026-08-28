@@ -1,0 +1,2258 @@
+# Nandik Dawar — Personal Portfolio Website
+
+## Project Brief
+
+Build a polished, production-ready personal portfolio website for **Nandik Dawar**, a Full Stack Developer and Computer Science student.
+
+The portfolio should feel:
+
+- Modern
+- Colourful
+- Creative
+- Professional
+- Developer-focused
+- Friendly and approachable
+- Visually distinctive
+- Smooth and premium
+- About **80% creative/product-design aesthetic**
+- About **20% software-engineering aesthetic**
+
+The website must **NOT** look like a stereotypical developer portfolio with:
+
+- Black backgrounds everywhere
+- Green terminal text
+- Excessive neon
+- Matrix effects
+- Giant code editors
+- Cyberpunk visuals
+- Excessive glassmorphism
+- Overdone 3D effects
+- Gaming-style UI
+
+The primary inspiration is the visual structure and polish of:
+
+`https://www.rubenmarcus.dev/`
+
+However, do **not** copy the website.
+
+Use it only as inspiration for:
+
+- Strong typography
+- Section transitions
+- Portfolio storytelling
+- Visual hierarchy
+- Motion
+- Project presentation
+- Premium feel
+
+The final website should use the colourful design direction provided in the reference mockups.
+
+---
+
+# 1. Core Design Direction
+
+The visual identity should use:
+
+- Warm cream/off-white background
+- Coral/orange accents
+- Royal blue accents
+- Soft purple accents
+- Mint/teal accents
+- Occasional yellow
+- Dark navy/charcoal typography
+
+The overall visual feeling should resemble:
+
+> Creative product designer portfolio meets modern software engineer portfolio.
+
+The website should communicate that Nandik is someone who:
+
+- Builds real products
+- Understands backend systems
+- Works with cloud technologies
+- Builds full-stack applications
+- Works with APIs
+- Has experience with AI/computer vision
+- Understands testing and automation
+- Can design complete systems
+
+---
+
+# 2. Primary Technology Stack
+
+Use the following stack.
+
+## Frontend
+
+- Next.js
+- TypeScript
+- React
+- Tailwind CSS
+
+Use the latest stable versions.
+
+Prefer the **Next.js App Router** architecture.
+
+---
+
+## Animation
+
+Use:
+
+- Motion / Framer Motion for standard animations
+- GSAP only when Motion cannot cleanly implement an effect
+- Lenis for smooth scrolling
+
+Do not unnecessarily use GSAP everywhere.
+
+Motion should handle approximately 80–90% of animations.
+
+---
+
+## Icons
+
+Use:
+
+- Lucide React
+
+Do not mix several icon libraries.
+
+---
+
+## Contact Form
+
+Use:
+
+- Next.js API route / Server Action
+- Resend
+
+The form should send contact messages to the portfolio owner's email.
+
+---
+
+## Deployment
+
+Target deployment platform:
+
+- Vercel
+
+The project must be fully compatible with Vercel.
+
+---
+
+# 3. Website Architecture
+
+The main website should be a smooth single-page experience with detailed project pages.
+
+Routes:
+
+```text
+/
+├── /projects
+├── /projects/billsense
+├── /projects/interview-platform
+├── /projects/mental-wellness
+├── /projects/car-rental
+└── /404
+```
+
+The homepage should contain:
+
+```text
+Navbar
+Hero
+About
+Featured Projects
+Experience
+Skills
+Achievements
+Contact
+Footer
+```
+
+---
+
+# 4. Navbar
+
+Create a floating/minimal navbar.
+
+Desktop navigation:
+
+```text
+ND / Nandik Dawar
+
+Home
+About
+Projects
+Experience
+Skills
+Achievements
+Contact
+
+Theme Toggle
+
+Let's Connect →
+```
+
+Requirements:
+
+- Sticky or semi-sticky
+- Slight background blur after scrolling
+- Transparent when at the top
+- Smooth section scrolling
+- Highlight currently active section
+- Compact height
+- Rounded button styles
+
+The main CTA:
+
+```text
+Let's Connect →
+```
+
+should scroll to the contact section.
+
+---
+
+# 5. Hero Section
+
+The hero is the most important section of the website.
+
+Use the supplied **transparent professional portrait of Nandik**.
+
+Store the portrait as:
+
+```text
+/public/images/nandik-hero.png
+```
+
+Do not generate another person.
+
+Do not modify facial features.
+
+Do not use a stock person.
+
+---
+
+## Hero Layout
+
+Desktop layout:
+
+```text
+LEFT                    CENTER / RIGHT
+
+Small intro badge       Colourful shapes
+                        behind portrait
+
+Headline                Nandik portrait
+
+Description             Floating code cards
+
+CTA buttons             Small decorative
+                        developer elements
+
+Quick statistics
+```
+
+---
+
+## Hero Copy
+
+Small badge:
+
+```text
+● Full Stack Developer
+```
+
+Main heading:
+
+```text
+I build digital
+products that
+solve real problems.
+```
+
+Highlight:
+
+```text
+digital products
+```
+
+or:
+
+```text
+solve real problems.
+```
+
+using coral and/or blue.
+
+Description:
+
+```text
+Full Stack Developer and Computer Science student building scalable web applications, cloud solutions and intelligent systems.
+```
+
+---
+
+## Hero CTAs
+
+Primary:
+
+```text
+View My Work →
+```
+
+Secondary:
+
+```text
+Download CV ↓
+```
+
+Primary button should scroll to projects.
+
+Download CV should download the resume from:
+
+```text
+/public/Nandik-Dawar-Resume.pdf
+```
+
+---
+
+# 6. Hero Portrait Composition
+
+Place Nandik's transparent portrait over abstract colourful shapes.
+
+Possible shapes:
+
+- Orange blob
+- Blue curved shape
+- Mint circle
+- Purple rounded rectangle
+- Small dotted grid
+- Scribble lines
+
+Shapes must feel hand-crafted rather than futuristic.
+
+Do not overpower the portrait.
+
+---
+
+# 7. Developer Elements Around Hero
+
+Add only a few subtle technical elements.
+
+For example:
+
+```tsx
+const developer = {
+  passion: "building",
+  focus: "impact",
+  stack: ["Next.js", "FastAPI", "AWS"]
+};
+```
+
+Display this inside one dark floating code card.
+
+Add 2–3 smaller cards:
+
+```text
+</>
+```
+
+```text
+{ }
+```
+
+```text
+API
+```
+
+These should float around the portrait.
+
+The technical decorations should account for no more than roughly 20% of the hero's visual language.
+
+---
+
+# 8. Hero Statistics
+
+Below the hero copy show:
+
+```text
+2+
+Internships
+```
+
+```text
+4+
+Major Projects
+```
+
+```text
+2
+Hackathon Wins
+```
+
+```text
+AWS
+Certified
+```
+
+Optional:
+
+```text
+Robotics
+Competition Winner
+```
+
+Use small colourful icons.
+
+---
+
+# 9. Hero Animation
+
+On initial load:
+
+1. Navbar fades downward.
+2. Badge appears.
+3. Headline reveals line by line.
+4. Description fades upward.
+5. CTA buttons appear.
+6. Portrait moves upward approximately 20–30px.
+7. Background shapes scale into place.
+8. Code cards enter from different directions.
+9. Statistics fade in.
+
+Total animation duration should be approximately:
+
+```text
+1.2–1.8 seconds
+```
+
+Do not create a long loading intro.
+
+The user must be able to use the site immediately.
+
+---
+
+# 10. About Section
+
+Section identifier:
+
+```text
+ABOUT ME
+```
+
+Main heading:
+
+```text
+Curious mind.
+Problem solver.
+Always learning.
+```
+
+Use different accent colours for selected words.
+
+Suggested layout:
+
+```text
+LEFT                        RIGHT
+
+Heading                     Portrait/image treatment
+Description                 Abstract blob
+Experience bullets          Decorative elements
+Signature
+```
+
+---
+
+## About Copy
+
+Use concise copy such as:
+
+```text
+I'm a Computer Science student at UPES, Dehradun, specialising in Full Stack Development.
+
+I enjoy building complete products across frontend, backend, APIs and cloud infrastructure, while exploring AI, computer vision and automation to solve practical problems.
+
+I care about building systems that are useful, scalable and genuinely solve something.
+```
+
+Do not make the About section extremely long.
+
+---
+
+# 11. About Highlights
+
+Show:
+
+```text
+Full Stack Developer Intern
+Onzen Softwares LLP
+```
+
+```text
+Software Testing Intern
+Harman Connected Services
+```
+
+```text
+AWS Certified Developer — Associate
+```
+
+```text
+2× Hackathon Winner
+```
+
+```text
+Robotics Competition Winner
+```
+
+---
+
+# 12. Featured Projects
+
+Section label:
+
+```text
+FEATURED PROJECTS
+```
+
+Heading:
+
+```text
+Things I've built
+and I'm proud of
+```
+
+Use a colourful emphasis on:
+
+```text
+proud of
+```
+
+---
+
+# 13. Project Grid
+
+Desktop:
+
+```text
+BillSense                 AI Interview Platform
+
+Mental Wellness           CarRental
+```
+
+or a horizontal card layout similar to the supplied visual reference.
+
+Each card should contain:
+
+- Project name
+- One-line description
+- Technology tags
+- Screenshot/illustration
+- Arrow button
+- Hover animation
+
+---
+
+# 14. Project 1 — BillSense
+
+Title:
+
+```text
+BillSense
+```
+
+Subtitle:
+
+```text
+Document-Driven Resource Intelligence Platform
+```
+
+Description:
+
+```text
+OCR-powered application that extracts structured information from utility bills and transforms it into organised, searchable and analytical data.
+```
+
+Technologies:
+
+```text
+Kotlin
+Jetpack Compose
+Node.js
+Express.js
+FastAPI
+Python
+Kraken OCR
+OpenCV
+MongoDB Atlas
+```
+
+Key concepts:
+
+```text
+OCR
+Image Processing
+Microservices
+REST APIs
+Analytics
+Data Extraction
+```
+
+Use a mobile-app/dashboard screenshot presentation.
+
+Accent colour:
+
+```text
+Mint / pale green
+```
+
+---
+
+# 15. Project 2 — Automated Interview Platform
+
+Title:
+
+```text
+Automated Interview Platform
+```
+
+Description:
+
+```text
+End-to-end browser-based interview platform with secure candidate links, automated video recording, silence-based question progression and AI-powered transcription.
+```
+
+Technologies:
+
+```text
+React
+Node.js
+Express.js
+FastAPI
+MongoDB Atlas
+Cloudinary
+Faster Whisper
+REST APIs
+```
+
+Key features:
+
+```text
+Secure interview sessions
+Automated recording
+Silence detection
+Cloud upload
+Speech-to-text
+Interview workflow automation
+```
+
+Accent colour:
+
+```text
+Blue / lavender
+```
+
+---
+
+# 16. Project 3 — Mental Wellness Web App
+
+Title:
+
+```text
+Mental Wellness
+```
+
+Description:
+
+```text
+Mental wellness platform combining therapist consultations, journaling, guided meditation, breathing exercises, health tracking and an AI chatbot.
+```
+
+Technologies:
+
+```text
+HTML
+CSS
+JavaScript
+```
+
+Accent colour:
+
+```text
+Purple / lavender
+```
+
+Use a calm illustration.
+
+---
+
+# 17. Project 4 — CarRental
+
+Title:
+
+```text
+CarRental
+```
+
+Description:
+
+```text
+MERN-based car rental platform with vehicle browsing, real-time availability, authentication and booking management.
+```
+
+Technologies:
+
+```text
+MongoDB
+Express.js
+React
+Node.js
+JWT
+REST APIs
+```
+
+Features:
+
+```text
+Vehicle browsing
+Booking
+Availability checks
+Authentication
+Role-based access
+Pagination
+Responsive UI
+```
+
+Accent colour:
+
+```text
+Warm yellow
+```
+
+---
+
+# 18. Project Card Hover Animation
+
+On mouse hover:
+
+```text
+Card translates upward 5–7px
+Image scales approximately 1.03
+Arrow rotates slightly
+Border becomes more visible
+Shadow strengthens slightly
+```
+
+Duration:
+
+```text
+200–300ms
+```
+
+Avoid dramatic 3D tilting.
+
+---
+
+# 19. Individual Project Case Study Pages
+
+Every major project must have its own detailed page.
+
+Example:
+
+```text
+/projects/billsense
+```
+
+Structure:
+
+```text
+Project Hero
+
+Project Overview
+
+Problem
+
+Solution
+
+Architecture
+
+Features
+
+Technology Stack
+
+Screenshots
+
+Engineering Challenges
+
+What I Learned
+
+Links
+
+Next Project
+```
+
+---
+
+# 20. Project Page Hero
+
+Show:
+
+```text
+BillSense
+
+Document-Driven Resource
+Intelligence Platform
+```
+
+Include:
+
+```text
+Role
+Timeline
+Tech Stack
+Category
+```
+
+Buttons:
+
+```text
+Live Demo ↗
+GitHub ↗
+```
+
+Only display buttons when URLs exist.
+
+---
+
+# 21. Architecture Diagram
+
+Project pages should support architecture diagrams.
+
+Example BillSense:
+
+```text
+Bill Upload
+      ↓
+Image Preprocessing
+      ↓
+OCR Engine
+      ↓
+Field Extraction
+      ↓
+FastAPI
+      ↓
+MongoDB
+      ↓
+Analytics Dashboard
+```
+
+Render diagrams using styled HTML/CSS components.
+
+Do not require external diagram images.
+
+---
+
+# 22. Experience Section
+
+Label:
+
+```text
+EXPERIENCE
+```
+
+Heading:
+
+```text
+My professional journey
+```
+
+Use a vertical timeline.
+
+---
+
+# 23. Experience — Onzen
+
+```text
+Full Stack Developer Intern
+
+Onzen Softwares LLP
+
+June 2026 — July 2026
+```
+
+Description:
+
+```text
+Built an automated interview platform using React, Node.js, Express.js, FastAPI, MongoDB Atlas and Cloudinary.
+
+Implemented secure interview links, candidate onboarding, automated recording, silence-based question progression, cloud storage and AI-powered speech-to-text transcription.
+```
+
+Display technology icons below.
+
+---
+
+# 24. Experience — Harman
+
+```text
+Software Testing Intern
+
+Harman Connected Services India Pvt. Ltd.
+
+June 2025 — July 2025
+```
+
+Description:
+
+```text
+Built an automated testing framework using PyTest and Selenium with the Page Object Model.
+
+Automated 30+ test cases and helped reduce repetitive manual testing effort.
+```
+
+Technology badges:
+
+```text
+Python
+PyTest
+Selenium
+POM
+Automation Testing
+```
+
+---
+
+# 25. Skills Section
+
+Label:
+
+```text
+SKILLS & TOOLS
+```
+
+Heading:
+
+```text
+Things I work with
+```
+
+Divide skills into categories.
+
+---
+
+## Languages
+
+```text
+C
+Java
+Python
+JavaScript
+HTML5
+CSS3
+```
+
+---
+
+## Frameworks & Libraries
+
+```text
+React.js
+React Native
+Kotlin
+Jetpack Compose
+Tailwind CSS
+Node.js
+Express.js
+FastAPI
+```
+
+---
+
+## Databases & Cloud
+
+```text
+MongoDB
+MongoDB Atlas
+MySQL
+Cloudinary
+AWS
+```
+
+---
+
+## AI & Computer Vision
+
+```text
+Faster Whisper
+Kraken OCR
+OpenCV
+Regex-Based Data Extraction
+```
+
+---
+
+## Testing & Automation
+
+```text
+PyTest
+Selenium
+Postman
+API Testing
+Functional Testing
+Regression Testing
+```
+
+---
+
+# 26. Skill Presentation
+
+Do not use giant progress bars like:
+
+```text
+React █████████ 92%
+```
+
+Do not assign fake percentages.
+
+Instead use:
+
+- Technology icon
+- Technology name
+- Small category cards
+
+Cards should use slightly different pastel colours.
+
+---
+
+# 27. Skills Developer Card
+
+Add one dark technical card containing something similar to:
+
+```js
+function solveProblem(problem) {
+  analyze(problem);
+  plan();
+  build();
+  test();
+  iterate();
+
+  return solution;
+}
+```
+
+Keep it subtle.
+
+---
+
+# 28. Personal Development Card
+
+Create a colourful card:
+
+```text
+Always building.
+Always learning.
+```
+
+Include themes:
+
+```text
+System Design
+Cloud Architecture
+AI & Computer Vision
+Scalable Applications
+```
+
+Optional small rocket illustration.
+
+---
+
+# 29. Achievements Section
+
+Label:
+
+```text
+ACHIEVEMENTS
+```
+
+Heading:
+
+```text
+Milestones & highlights
+```
+
+Create clean cards for:
+
+### AWS
+
+```text
+AWS Certified Developer — Associate
+DVA-C02
+2026
+```
+
+### SPE Hackathon
+
+```text
+Winner
+SPE Hackathon
+2025
+```
+
+### Code Hustle
+
+```text
+Winner
+Code Hustle Hackathon
+2024
+```
+
+### IIT Roorkee
+
+```text
+Participant
+Full Stack Development Workshop
+IIT Roorkee
+```
+
+### Robotics
+
+```text
+Winner at State and National Level
+Robotics Competitions
+
+Qualified for International Level
+```
+
+---
+
+# 30. Contact Section
+
+Label:
+
+```text
+LET'S CONNECT
+```
+
+Heading:
+
+```text
+Have a project
+in mind?
+```
+
+Supporting copy:
+
+```text
+I'm always open to discussing interesting opportunities, collaborations or ideas. Drop me a message and I'll get back to you.
+```
+
+---
+
+# 31. Contact Information
+
+Display:
+
+```text
+Email
+LinkedIn
+GitHub
+Location
+```
+
+Use:
+
+```text
+New Delhi, India
+```
+
+Add social icons.
+
+---
+
+# 32. Contact Form
+
+Fields:
+
+```text
+Name
+Email
+Subject
+Message
+```
+
+Button:
+
+```text
+Send Message →
+```
+
+Validation required.
+
+States:
+
+```text
+Idle
+Sending
+Success
+Error
+```
+
+Success message:
+
+```text
+Message sent successfully.
+I'll get back to you soon.
+```
+
+Prevent duplicate submissions while sending.
+
+---
+
+# 33. Contact Illustration
+
+Use a colourful illustration such as:
+
+- Envelope
+- Paper plane
+- Message card
+
+Do not use a corporate stock image.
+
+---
+
+# 34. Footer
+
+Simple footer.
+
+Left:
+
+```text
+© 2026 Nandik Dawar
+```
+
+Middle:
+
+```text
+Built with ♥ and lots of ☕
+```
+
+Right:
+
+```text
+Back to top ↑
+```
+
+Include social links.
+
+---
+
+# 35. Responsive Design
+
+The website must work perfectly at:
+
+```text
+360px
+390px
+430px
+768px
+1024px
+1280px
+1440px
+1920px
+```
+
+---
+
+# 36. Mobile Hero
+
+Mobile structure:
+
+```text
+Badge
+
+Headline
+
+Description
+
+Buttons
+
+Portrait
+
+Statistics
+```
+
+Decorative elements should reduce significantly on mobile.
+
+Do not let floating elements overlap text.
+
+---
+
+# 37. Mobile Navigation
+
+Create a custom full-screen or side-drawer menu.
+
+Include:
+
+```text
+Home
+About
+Projects
+Experience
+Skills
+Achievements
+Contact
+```
+
+At the bottom:
+
+```text
+GitHub
+LinkedIn
+Email
+```
+
+Add a small code card for visual personality.
+
+---
+
+# 38. Typography
+
+Use two complementary fonts.
+
+Recommended options:
+
+### Primary Sans Serif
+
+Choose one:
+
+```text
+Manrope
+Plus Jakarta Sans
+DM Sans
+Inter
+```
+
+Preferred:
+
+```text
+Manrope
+```
+
+### Display / Editorial Font
+
+Choose one:
+
+```text
+DM Serif Display
+Instrument Serif
+Playfair Display
+```
+
+Preferred:
+
+```text
+DM Serif Display
+```
+
+Use serif selectively.
+
+Example:
+
+```text
+I build digital
+products that
+solve real problems.
+```
+
+Some lines can use serif emphasis.
+
+Do not make the entire website serif.
+
+---
+
+# 39. Colour Palette
+
+Use CSS variables.
+
+Example:
+
+```css
+--background: #fff9f2;
+--surface: #ffffff;
+--text-primary: #10131a;
+--text-secondary: #60646c;
+
+--coral: #ff6846;
+--blue: #4c63ff;
+--mint: #5ed6c0;
+--purple: #8b72ff;
+--yellow: #ffc75a;
+
+--border: rgba(15, 20, 30, 0.08);
+```
+
+Exact values may be adjusted slightly for accessibility.
+
+---
+
+# 40. Border Radius
+
+Use generous but controlled rounding.
+
+```text
+Small components: 10–14px
+Cards: 16–24px
+Large sections: 24–32px
+Buttons: 10–14px
+```
+
+Avoid turning every component into a pill.
+
+---
+
+# 41. Shadows
+
+Keep shadows subtle.
+
+Example:
+
+```css
+box-shadow:
+  0 10px 30px rgba(20, 20, 40, 0.06);
+```
+
+Do not use enormous glowing shadows.
+
+---
+
+# 42. Scroll Behaviour
+
+Use Lenis for smooth scrolling.
+
+Requirements:
+
+- Scroll must remain responsive.
+- Anchor navigation must work.
+- Native accessibility must not break.
+- Disable/reduce smooth effects for users using reduced-motion preferences.
+
+---
+
+# 43. Section Reveal Animation
+
+Standard reveal:
+
+```text
+opacity: 0 → 1
+translateY: 20px → 0
+duration: 0.5–0.7s
+```
+
+Cards should stagger slightly.
+
+Do not animate every word on the website.
+
+---
+
+# 44. Decorative Elements
+
+Allowed:
+
+- Dots
+- Squiggles
+- Small arrows
+- Small stars
+- Abstract blobs
+- Hand-drawn lines
+- Tiny brackets
+- Code symbols
+- Grid patterns
+
+Do not create visual clutter.
+
+---
+
+# 45. Optional Custom Cursor
+
+Desktop only.
+
+Use a subtle custom cursor.
+
+Normal:
+
+```text
+small dot
+```
+
+Hovering project:
+
+```text
+View
+```
+
+Hovering link:
+
+```text
+↗
+```
+
+Disable custom cursor on touch devices.
+
+Do not interfere with native pointer usability.
+
+---
+
+# 46. Theme Mode
+
+Support:
+
+```text
+Light
+Dark
+```
+
+Light mode should be the primary visual identity.
+
+Dark mode should preserve the same colour personality.
+
+Dark mode should NOT become pure black neon.
+
+Suggested dark background:
+
+```text
+#111219
+```
+
+Cards:
+
+```text
+#191b24
+```
+
+Maintain coral, mint, purple and blue accents.
+
+---
+
+# 47. Component Architecture
+
+Recommended:
+
+```text
+src/
+│
+├── app/
+│   ├── layout.tsx
+│   ├── page.tsx
+│   ├── globals.css
+│   │
+│   ├── projects/
+│   │   ├── page.tsx
+│   │   └── [slug]/
+│   │       └── page.tsx
+│   │
+│   ├── api/
+│   │   └── contact/
+│   │       └── route.ts
+│   │
+│   └── not-found.tsx
+│
+├── components/
+│   ├── layout/
+│   │   ├── Navbar.tsx
+│   │   ├── MobileMenu.tsx
+│   │   └── Footer.tsx
+│   │
+│   ├── sections/
+│   │   ├── Hero.tsx
+│   │   ├── About.tsx
+│   │   ├── Projects.tsx
+│   │   ├── Experience.tsx
+│   │   ├── Skills.tsx
+│   │   ├── Achievements.tsx
+│   │   └── Contact.tsx
+│   │
+│   ├── project/
+│   │   ├── ProjectCard.tsx
+│   │   ├── ProjectHero.tsx
+│   │   ├── ProjectArchitecture.tsx
+│   │   └── ProjectNavigation.tsx
+│   │
+│   ├── ui/
+│   │   ├── Button.tsx
+│   │   ├── Badge.tsx
+│   │   ├── SectionTitle.tsx
+│   │   ├── TechBadge.tsx
+│   │   ├── CodeCard.tsx
+│   │   └── SocialButton.tsx
+│   │
+│   └── animations/
+│       ├── Reveal.tsx
+│       └── MagneticButton.tsx
+│
+├── data/
+│   ├── projects.ts
+│   ├── experience.ts
+│   ├── skills.ts
+│   └── achievements.ts
+│
+├── lib/
+│   ├── utils.ts
+│   └── resend.ts
+│
+└── types/
+    └── index.ts
+```
+
+---
+
+# 48. Data Driven Architecture
+
+Do not hardcode repeated portfolio data directly into UI components.
+
+Use data files.
+
+Example:
+
+```ts
+export interface Project {
+  slug: string;
+  title: string;
+  shortDescription: string;
+  description: string;
+  image: string;
+  technologies: string[];
+  category: string;
+  accent: string;
+  github?: string;
+  live?: string;
+}
+```
+
+Then:
+
+```ts
+export const projects: Project[] = [...]
+```
+
+---
+
+# 49. SEO
+
+Implement complete SEO.
+
+Metadata:
+
+```text
+Title:
+Nandik Dawar | Full Stack Developer
+
+Description:
+Full Stack Developer building scalable web applications, cloud solutions and intelligent systems.
+```
+
+Add:
+
+- OpenGraph metadata
+- Twitter card
+- Favicon
+- Canonical URL
+- Sitemap
+- robots.txt
+- Structured metadata when appropriate
+
+---
+
+# 50. OpenGraph Image
+
+Create an OpenGraph image matching the site design.
+
+Include:
+
+```text
+Nandik Dawar
+
+Full Stack Developer
+
+I build digital products
+that solve real problems.
+```
+
+Use portrait + colourful shapes.
+
+---
+
+# 51. Accessibility
+
+Required:
+
+- Semantic HTML
+- Proper heading hierarchy
+- Keyboard navigation
+- Visible focus states
+- ARIA labels where needed
+- Accessible contrast
+- Alt text
+- Reduced motion support
+- Accessible form errors
+
+Target:
+
+```text
+WCAG AA
+```
+
+---
+
+# 52. Performance
+
+Target Lighthouse scores:
+
+```text
+Performance: 90+
+Accessibility: 95+
+Best Practices: 95+
+SEO: 95+
+```
+
+Optimise:
+
+- Images
+- Fonts
+- JavaScript
+- Client-side components
+- Animations
+
+Use:
+
+```tsx
+next/image
+```
+
+for images where appropriate.
+
+---
+
+# 53. Image Optimisation
+
+Use:
+
+```text
+WebP / AVIF
+```
+
+where appropriate.
+
+Hero portrait can remain PNG if transparency is required.
+
+Do not load giant full-resolution screenshots unnecessarily.
+
+---
+
+# 54. Loading Strategy
+
+Avoid a traditional loading screen.
+
+The website should become usable immediately.
+
+If fonts/assets are still loading, use graceful fallbacks.
+
+---
+
+# 55. Contact API Security
+
+Implement:
+
+- Server-side validation
+- Basic rate limiting
+- Spam protection
+- Sanitisation
+- Environment variables
+
+Use:
+
+```text
+RESEND_API_KEY
+CONTACT_EMAIL
+```
+
+Never expose API keys in the client bundle.
+
+---
+
+# 56. Environment Variables
+
+Create:
+
+```text
+.env.local.example
+```
+
+Containing:
+
+```env
+RESEND_API_KEY=
+CONTACT_EMAIL=
+NEXT_PUBLIC_SITE_URL=
+```
+
+---
+
+# 57. README Setup Instructions
+
+The actual repository README must contain:
+
+```bash
+git clone <repository>
+
+cd portfolio
+
+npm install
+
+npm run dev
+```
+
+Then:
+
+```text
+http://localhost:3000
+```
+
+Production:
+
+```bash
+npm run build
+npm start
+```
+
+---
+
+# 58. Required Scripts
+
+Package scripts:
+
+```json
+{
+  "dev": "next dev",
+  "build": "next build",
+  "start": "next start",
+  "lint": "next lint"
+}
+```
+
+Adapt to the current Next.js version if needed.
+
+---
+
+# 59. Quality Requirements
+
+The website must feel intentionally designed.
+
+Do not rely on:
+
+- Default Tailwind component appearance
+- Generic templates
+- Default shadcn styling everywhere
+- Repetitive cards
+- Random gradients
+- Excessive animation
+- Placeholder lorem ipsum
+
+Every section should have visual personality.
+
+---
+
+# 60. Important Visual Rule
+
+The portfolio should communicate:
+
+```text
+Creative
+↓
+Professional
+↓
+Technical
+```
+
+Not:
+
+```text
+Technical
+↓
+Technical
+↓
+Technical
+↓
+Terminal
+```
+
+The user is a developer, not a visual designer.
+
+The website should therefore look visually sophisticated while keeping the technical identity clear through:
+
+- Architecture diagrams
+- Technology stacks
+- Code snippets
+- Project engineering details
+- Internship experience
+- Cloud certification
+- Project case studies
+
+---
+
+# 61. Hero Design Balance
+
+Hero visual balance should approximately be:
+
+```text
+45% Typography/content
+
+35% Portrait
+
+20% Decorations/technical elements
+```
+
+The portrait should remain one of the dominant elements.
+
+---
+
+# 62. Project Storytelling
+
+Projects should not merely say:
+
+```text
+Built using React and Node.js.
+```
+
+Each project page should answer:
+
+```text
+What problem existed?
+
+What did I build?
+
+How does it work?
+
+What technologies did I use?
+
+Why did I choose them?
+
+What engineering problems occurred?
+
+How did I solve them?
+
+What did I learn?
+```
+
+This is a key differentiator of the website.
+
+---
+
+# 63. Interactive Details
+
+Add subtle interactive elements.
+
+Examples:
+
+### Navbar logo
+
+Hover:
+
+```text
+ND → Nandik Dawar
+```
+
+### Project buttons
+
+```text
+↗
+```
+
+rotate slightly on hover.
+
+### Skill cards
+
+Icons gently move upward.
+
+### Achievement cards
+
+Small badge animation.
+
+### Hero code window
+
+Cursor blink animation.
+
+Use these sparingly.
+
+---
+
+# 64. Avoid
+
+Do NOT add:
+
+- Full screen 3D objects
+- Three.js unless genuinely required
+- Particle backgrounds
+- Matrix effects
+- Heavy shaders
+- Constant mouse-follow effects
+- Excessive parallax
+- Auto-playing videos
+- Autoplay music
+- Huge loading animations
+- Excessive glass blur
+- Horizontal scrolling that breaks mobile usability
+
+---
+
+# 65. Browser Support
+
+Test on latest versions of:
+
+```text
+Chrome
+Edge
+Firefox
+Safari
+```
+
+Also test mobile Safari and Chrome Android.
+
+---
+
+# 66. Breakpoints
+
+Suggested:
+
+```text
+sm: 640
+md: 768
+lg: 1024
+xl: 1280
+2xl: 1536
+```
+
+Do not build desktop-first and simply shrink everything.
+
+Design responsive layouts intentionally.
+
+---
+
+# 67. Content Source of Truth
+
+Portfolio content should be based on the supplied resume.
+
+Do not invent:
+
+- Companies
+- Certifications
+- Employment
+- Project achievements
+- Technologies
+- Awards
+
+If information is unavailable, leave the field optional rather than creating fake content.
+
+---
+
+# 68. Placeholder Links
+
+Until real URLs are supplied, define:
+
+```ts
+const socialLinks = {
+  github: "#",
+  linkedin: "#",
+  email: "#"
+};
+```
+
+Replace with the actual links before deployment.
+
+Do not display dead CTA buttons on the production site.
+
+---
+
+# 69. Analytics
+
+Add:
+
+```text
+Vercel Analytics
+```
+
+Optional:
+
+```text
+Vercel Speed Insights
+```
+
+Keep analytics lightweight.
+
+---
+
+# 70. 404 Page
+
+Create a custom 404.
+
+Example:
+
+```text
+404
+
+Looks like this route
+never made it to production.
+
+← Back Home
+```
+
+Include a small code illustration.
+
+Maintain the same colourful design language.
+
+---
+
+# 71. Cursor / Motion Accessibility
+
+When:
+
+```css
+@media (prefers-reduced-motion: reduce)
+```
+
+disable:
+
+- Smooth scrolling
+- Large transitions
+- Floating animations
+- Cursor effects
+
+Maintain complete usability.
+
+---
+
+# 72. Implementation Order
+
+Build in this order.
+
+## Phase 1
+
+Project setup:
+
+```text
+Next.js
+TypeScript
+Tailwind
+Fonts
+Global design tokens
+```
+
+## Phase 2
+
+Core layout:
+
+```text
+Navbar
+Hero
+Footer
+```
+
+## Phase 3
+
+Homepage sections:
+
+```text
+About
+Projects
+Experience
+Skills
+Achievements
+Contact
+```
+
+## Phase 4
+
+Project pages.
+
+## Phase 5
+
+Animations.
+
+## Phase 6
+
+Responsive polish.
+
+## Phase 7
+
+SEO, accessibility and performance.
+
+## Phase 8
+
+Contact functionality.
+
+## Phase 9
+
+Final browser testing.
+
+---
+
+# 73. Definition of Done
+
+The project is complete only when:
+
+- Homepage matches the provided visual identity.
+- Real portrait is correctly integrated.
+- Navigation works.
+- All sections are responsive.
+- Projects are data-driven.
+- Individual project pages exist.
+- Contact form works.
+- Resume download works.
+- Mobile navigation works.
+- Light/dark mode works.
+- Animations are smooth.
+- Reduced-motion mode works.
+- No console errors exist.
+- No broken links exist.
+- No layout overflow exists.
+- Lighthouse targets are reasonably met.
+- SEO metadata exists.
+- Site builds successfully using:
+
+```bash
+npm run build
+```
+
+- Site deploys successfully to Vercel.
+
+---
+
+# 74. Final Visual Objective
+
+When somebody lands on the portfolio, the first impression should be:
+
+> "This developer clearly understands technology, but also knows how to present the things he builds."
+
+Within approximately 10 seconds, the visitor should understand:
+
+```text
+WHO
+Nandik Dawar
+
+WHAT
+Full Stack Developer
+
+FOCUS
+Web, Backend, APIs, Cloud and Intelligent Systems
+
+EXPERIENCE
+Onzen + Harman
+
+PROOF
+Real Projects + AWS Certification + Hackathon Wins
+```
+
+The design should be memorable without becoming distracting.
+
+The final website must feel like a premium personal brand rather than a modified developer template.
