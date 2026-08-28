@@ -82,10 +82,10 @@ a:focus-visible {
   left: 50%;
   display: flex;
   width: min(calc(100% - 40px), 1320px);
-  height: 64px;
+  height: 77px;
   align-items: center;
   justify-content: space-between;
-  padding: 0 10px 0 12px;
+  padding: 0 12px 0 14px;
   border: 1px solid transparent;
   border-radius: 18px;
   transform: translateX(-50%);
@@ -102,8 +102,8 @@ a:focus-visible {
 .brand {
   display: inline-flex;
   align-items: center;
-  gap: 10px;
-  font-size: 13px;
+  gap: 12px;
+  font-size: 16px;
   font-weight: 800;
   letter-spacing: -0.03em;
   white-space: nowrap;
@@ -111,20 +111,20 @@ a:focus-visible {
 
 .brand-mark {
   display: grid;
-  width: 36px;
-  height: 36px;
+  width: 43px;
+  height: 43px;
   place-items: center;
-  border-radius: 12px;
+  border-radius: 14px;
   background: var(--coral);
   color: #fff;
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 800;
 }
 
 .desktop-nav {
   display: flex;
   align-items: center;
-  gap: clamp(14px, 1.7vw, 27px);
+  gap: clamp(17px, 2vw, 32px);
   margin-left: auto;
   margin-right: clamp(20px, 3vw, 48px);
 }
@@ -132,7 +132,7 @@ a:focus-visible {
 .desktop-nav a {
   position: relative;
   color: var(--text-secondary);
-  font-size: 11px;
+  font-size: 13px;
   font-weight: 700;
   transition: color 180ms ease;
 }
@@ -169,8 +169,8 @@ a:focus-visible {
 
 .icon-button {
   display: grid;
-  width: 36px;
-  height: 36px;
+  width: 43px;
+  height: 43px;
   padding: 0;
   place-items: center;
   border: 1px solid var(--border);
@@ -572,7 +572,7 @@ h2 {
 .about-copy {
   max-width: 540px;
   color: var(--text-secondary);
-  font-size: 15px;
+  font-size: 18px;
   line-height: 1.8;
 }
 
@@ -588,19 +588,19 @@ h2 {
 .highlight-row > span {
   display: inline-flex;
   align-items: center;
-  gap: 8px;
-  padding: 11px 13px;
+  gap: 10px;
+  padding: 13px 15px;
   border: 1px solid var(--border);
-  border-radius: 12px;
+  border-radius: 14px;
   background: var(--surface);
   color: var(--text-secondary);
-  font-size: 11px;
+  font-size: 13px;
   font-weight: 700;
 }
 
 .highlight-row > span > span { display: flex; flex-direction: column; gap: 2px; padding: 0; border: 0; background: transparent; }
-.highlight-row strong { color: var(--text-primary); font-size: 10px; }
-.highlight-row small { color: var(--text-secondary); font-size: 9px; font-weight: 600; }
+.highlight-row strong { color: var(--text-primary); font-size: 12px; }
+.highlight-row small { color: var(--text-secondary); font-size: 11px; font-weight: 600; }
 .highlight-row svg { flex: 0 0 auto; color: var(--coral); }
 
 .section-heading { align-items: end; margin-bottom: 42px; }

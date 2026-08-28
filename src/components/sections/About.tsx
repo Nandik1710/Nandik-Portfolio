@@ -26,7 +26,7 @@ export function About() {
         <div className="highlight-row">
           {aboutHighlights.map((highlight) => {
             const Icon = highlightIcons[highlight.icon as keyof typeof highlightIcons];
-            return <span key={highlight.title}><Icon size={17} /><span><strong>{highlight.title}</strong><small>{highlight.detail}</small></span></span>;
+            return <span key={highlight.title}><Icon size={20} /><span><strong>{highlight.title}</strong><small>{highlight.detail}</small></span></span>;
           })}
         </div>
       </Reveal>

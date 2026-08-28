@@ -47,6 +47,8 @@ export const projects: Project[] = [
   {
     slug: "interview-platform",
     title: "Automated Interview Platform",
+    image: "/images/AIplatform-hero.png",
+    cardImage: "/images/AIplatform-logo.png",
     subtitle: "End-to-end browser-based interview workflow",
     shortDescription: "A secure browser-based interview workflow with AI transcription.",
     description: "A three-service platform for dynamic interview links, candidate consent, browser recording, Cloudinary uploads, Faster Whisper transcription and Question & Answer report generation.",
@@ -89,6 +91,8 @@ export const projects: Project[] = [
     slug: "mental-wellness",
     title: "Mental Wellness",
     subtitle: "Mental Wellness Web App",
+    image: "/images/wellness-hero.png",
+    cardImage: "/images/wellness-logo.png",
     shortDescription: "A calmer digital space for reflection, support and healthy routines.",
     description: "A mental wellness platform combining therapist consultations, journaling, guided meditation, breathing exercises, health tracking and an AI chatbot.",
     technologies: ["HTML", "CSS", "JavaScript"],
@@ -128,6 +132,8 @@ export const projects: Project[] = [
     slug: "car-rental",
     title: "CarRental",
     subtitle: "Full-stack car rental platform",
+    image: "/images/car-hero.png",
+    cardImage: "/images/car-logo.png",
     shortDescription: "A full-stack booking experience with real-time availability.",
     description: "MERN-based car rental platform with vehicle browsing, real-time availability, authentication and booking management.",
     technologies: ["MongoDB", "Express.js", "React", "Node.js", "JWT", "REST APIs"],
@@ -162,5 +168,102 @@ export const projects: Project[] = [
     ],
     visualTreatment: "rental",
     github: "https://github.com/Nandik1710/Car_Rental_WebApp",
+  },
+    {
+    slug: "transportation-data-collection",
+    title: "Smart Travel Planner & Data Collection App",
+    subtitle: "Privacy-first travel planning and transportation data collection",
+    shortDescription: "A mobile platform for trip planning and automated transportation data collection.",
+    description:
+      "Combines trip planning for users with automated, privacy-first travel data collection for government transportation planning.",
+    technologies: [
+      "React Native",
+      "MongoDB",
+      "Express.js",
+      "Node.js",
+      "React",
+      "Google Maps API",
+      "Transport booking APIs",
+      "Payment gateways",
+    ],
+    category: "Travel & transportation",
+    accent: "blue",
+    keyConcepts: [
+      "Trip planning",
+      "Multi-mode transport comparison",
+      "GPS-based trip tracking",
+      "Anonymized travel data",
+      "AI-generated itineraries",
+      "Privacy-first consent",
+      "Gamified participation",
+    ],
+    features: [
+      "Origin and destination planning",
+      "Transport option comparison",
+      "Cost comparisons",
+      "Attraction and hotel recommendations",
+      "AI-generated itineraries",
+      "Google Maps route optimization",
+      "Real-time GPS-based trip tracking",
+      "Anonymized travel data collection",
+      "Gamified contribution incentives",
+      "Explicit user consent",
+    ],
+    overview:
+      "The app combines a trip planning and booking assistant with voluntary, anonymized travel data collection that can support transportation planning and policy decisions.",
+    problem:
+      "Traditional travel surveys are expensive, limited in coverage, infrequent and often inaccurate. Transportation planners need a smarter way to collect real-time travel behavior data.",
+    solution:
+      "The platform lets users plan trips, compare transport options and explore destinations while voluntarily contributing anonymized travel data through GPS tracking, trip details and consent-based collection.",
+    architecture: [
+      {
+        label: "React Native Mobile App",
+        detail: "Trip planning and data collection",
+      },
+      {
+        label: "Trip Planning Services",
+        detail: "Transport options, costs and recommendations",
+      },
+      {
+        label: "Google Maps API",
+        detail: "Routes and itinerary optimization",
+      },
+      {
+        label: "MERN Backend",
+        detail: "MongoDB + Express.js + Node.js + React dashboard",
+      },
+      {
+        label: "Secure Data Sharing",
+        detail: "Anonymized data sent to NATPAC servers",
+      },
+    ],
+    engineeringChallenges: [
+      "Address privacy concerns through transparent controls and explicit user consent.",
+      "Improve data accuracy when travel information includes manual inputs.",
+      "Optimize background GPS tracking for mobile battery usage.",
+      "Combine user-focused travel planning with transportation data collection.",
+    ],
+    learned: [
+      "How privacy-first consent shapes a mobile data collection experience.",
+      "How GPS-based travel data can support transportation planning.",
+      "How React Native and MERN services can work together in one product.",
+    ],
+    visuals: [
+      {
+        label: "Plan a journey",
+        detail: "Compare transport options, costs and destination recommendations.",
+      },
+      {
+        label: "Track a trip",
+        detail: "Collect travel routes and patterns with user consent.",
+      },
+      {
+        label: "Share insight",
+        detail: "Use anonymized travel data for transportation planning.",
+      },
+    ],
+    visualTreatment: "rental",
+    github:
+      "https://github.com/Nandik1710/Transportation_Data_Collection_MobileApp",
   },
 ];
