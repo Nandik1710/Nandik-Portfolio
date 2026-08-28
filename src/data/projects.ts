@@ -172,6 +172,8 @@ export const projects: Project[] = [
     {
     slug: "transportation-data-collection",
     title: "Smart Travel Planner & Data Collection App",
+    image: "/images/billSense-hero.png",
+    cardImage: "/images/billsense-logo.png",
     subtitle: "Privacy-first travel planning and transportation data collection",
     shortDescription: "A mobile platform for trip planning and automated transportation data collection.",
     description:
@@ -265,5 +267,196 @@ export const projects: Project[] = [
     visualTreatment: "rental",
     github:
       "https://github.com/Nandik1710/Transportation_Data_Collection_MobileApp",
+  },
+    {
+    slug: "digital-oilfield",
+    title: "Digital Oilfield Management System",
+    image: "/images/oil-hero.png",
+    cardImage: "/images/oil-logo.png",
+    subtitle: "Frontend prototype for oilfield operations and workflow management",
+    shortDescription:
+      "An industrial dashboard prototype for equipment, inventory, invoices, leak reporting and AI support.",
+    description:
+      "A frontend-based Digital Oilfield Management Platform prototype designed to simulate oilfield operations such as equipment inventory, order tracking, maintenance workflows and incident reporting.",
+    technologies: [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "Gemini API",
+      "Client-side storage",
+    ],
+    category: "Industrial dashboard",
+    accent: "yellow",
+    keyConcepts: [
+      "Equipment management",
+      "Inventory tracking",
+      "Order workflows",
+      "PDF invoice generation",
+      "Oil leak reporting",
+      "AI chatbot support",
+      "Client-side data handling",
+    ],
+    features: [
+      "Equipment and machinery inventory",
+      "Parts and tools ordering",
+      "Stock level tracking",
+      "Browser-based order history",
+      "Downloadable PDF invoices",
+      "Oil leak reporting",
+      "Response team assignment workflow",
+      "Gemini API chatbot assistance",
+    ],
+    overview:
+      "The project explores how a centralized digital interface can help manage oilfield logistics, monitoring and support workflows through a structured frontend dashboard.",
+    problem:
+      "Oilfield operations involve equipment, inventory, orders, maintenance workflows and incident reporting. These activities need a clear interface that keeps operational information organized.",
+    solution:
+      "The prototype brings equipment management, inventory tracking, order workflows, invoice generation, oil leak reporting and AI-assisted support into one frontend dashboard.",
+    architecture: [
+      {
+        label: "Operations Dashboard",
+        detail: "HTML + CSS + JavaScript",
+      },
+      {
+        label: "Inventory Management",
+        detail: "Equipment, parts and stock tracking",
+      },
+      {
+        label: "Order Workflow",
+        detail: "Browser-based order history",
+      },
+      {
+        label: "Invoice Generation",
+        detail: "Downloadable PDF documents",
+      },
+      {
+        label: "AI Support",
+        detail: "Gemini API chatbot integration",
+      },
+    ],
+    engineeringChallenges: [
+      "Design a structured dashboard for complex industrial workflows.",
+      "Manage equipment, stock levels and order history on the client side.",
+      "Create a conceptual oil leak reporting and response assignment workflow.",
+      "Integrate AI assistance into an operational support interface.",
+    ],
+    learned: [
+      "How to design dashboards for industrial use cases.",
+      "How frontend state and client-side storage can support workflow prototypes.",
+      "How AI services can support field engineers through chatbot-based assistance.",
+      "How dynamic PDF documents can support procurement workflows.",
+    ],
+    visuals: [
+      {
+        label: "Operations dashboard",
+        detail: "A centralized interface for oilfield logistics and workflow visibility.",
+      },
+      {
+        label: "Inventory workspace",
+        detail: "View equipment, machinery, stock levels and order information.",
+      },
+      {
+        label: "Incident reporting",
+        detail: "Report suspected oil leaks and simulate response assignment.",
+      },
+    ],
+    visualTreatment: "document",
+    github: "https://github.com/Nandik1710/Digital_Oilfield",
+  },
+    {
+    slug: "ai-text-summarizer",
+    title: "AI Text Summarizer with Interactive Chatbot",
+    image: "/images/text_summarizer_hero.png",
+    cardImage: "/images/text-logo.png",
+    subtitle: "Summarize, understand and explore lengthy content",
+    shortDescription:
+      "An AI-powered application for summarizing text, documents and URLs with interactive chatbot support.",
+    description:
+      "A web application that generates concise summaries from large text inputs, PDFs, DOCX files and web pages, then allows users to ask questions based on the generated summary.",
+    technologies: [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "Python",
+      "Flask",
+    ],
+    category: "AI productivity tool",
+    accent: "purple",
+    keyConcepts: [
+      "Text summarization",
+      "URL content extraction",
+      "PDF and DOCX support",
+      "Summary-based chatbot",
+      "Keyword generation",
+      "Light and dark mode",
+      "Word limit control",
+    ],
+    features: [
+      "Text summarization from user input",
+      "URL-based content summarization",
+      "PDF and DOCX document support",
+      "Interactive chatbot based on generated summaries",
+      "Paragraph and bullet-point summaries",
+      "Automatic keyword generation",
+      "Copy-to-clipboard support",
+      "Light and dark mode",
+      "Summary word limit control",
+    ],
+    overview:
+      "The application helps students, professionals, researchers and organizations quickly understand lengthy text-based content through concise summaries and interactive question answering.",
+    problem:
+      "Large documents, web pages and research materials can take a long time to understand. Users need a faster way to identify key information and explore the important parts of a source.",
+    solution:
+      "The application accepts text, URLs, PDFs and DOCX files, generates a concise summary, extracts keywords and provides a chatbot that answers questions using the generated summary as context.",
+    architecture: [
+      {
+        label: "Content Input",
+        detail: "Text, URLs, PDF files and DOCX files",
+      },
+      {
+        label: "Flask Web Application",
+        detail: "Python server-side processing",
+      },
+      {
+        label: "Summarization Flow",
+        detail: "Generate concise paragraph or bullet summaries",
+      },
+      {
+        label: "Summary Controls",
+        detail: "Keywords, word limits and copy support",
+      },
+      {
+        label: "Interactive Chatbot",
+        detail: "Ask questions based on the generated summary",
+      },
+    ],
+    engineeringChallenges: [
+      "Support multiple content sources including text, URLs, PDFs and DOCX files.",
+      "Present summaries in both paragraph and bullet-point formats.",
+      "Keep chatbot questions connected to the generated summary.",
+      "Make the tool readable across light and dark themes.",
+    ],
+    learned: [
+      "How to structure a Python and Flask application around text-processing workflows.",
+      "How different content sources can be brought into one summarization experience.",
+      "How summary-based question answering can make lengthy information easier to explore.",
+      "How small interaction details such as keywords, copy support and word limits improve usability.",
+    ],
+    visuals: [
+      {
+        label: "Content input",
+        detail: "Start with text, a URL, PDF or DOCX document.",
+      },
+      {
+        label: "Generated summary",
+        detail: "Choose paragraph or bullet-point output with keyword generation.",
+      },
+      {
+        label: "Interactive questions",
+        detail: "Ask the chatbot questions using the generated summary.",
+      },
+    ],
+    visualTreatment: "document",
+    github: "",
   },
 ];
